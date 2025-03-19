@@ -54,14 +54,20 @@ categories:
 
 👉 **操作指南**
 
-1. 打开Git官网，点击「Download for Windows」
+1. ### 下载Git
+
+   打开Git官网，点击「Download for Windows」
 
    Git官网：https://git-scm.com/
    下载页面：https://git-scm.com/downloads/win
 
-2. 全程无脑点「Next」
+2. ### 安装Git 
 
-3. 验证安装：开始 → 命令提示符 → 输入 `git version`，出现版本号即成功
+   双击安装包，全程无脑点「Next」。
+
+3. ### 验证安装
+
+   开始 → 命令提示符 → 输入 `git version`，出现版本号即成功
 
 **小贴士**：Git就像代码界的「美团外卖」，能把你的博客打包送到GitHub仓库
 
@@ -77,14 +83,20 @@ Windows命令▲
 
 👉 **操作指南**
 
-1. 访问Go官网下载Windows版（约100MB）
+1. ### 下载Go
+
+   访问Go官网下载Windows版（约100MB）
 
    Go官网：https://go.dev/
    下载页面：https://go.dev/doc/install
 
-2. 双击安装包，默认路径一路「Next」
+2. ### 安装Go
 
-3. 验证安装：开始 → 命令提示符 → 输入 `go version`，出现版本号说明引擎到位
+   双击安装包，默认路径一路「Next」。
+
+3. ### 验证安装
+
+   开始 → 命令提示符 → 输入 `go version`，出现版本号说明引擎到位
 
 **避坑指南**：如果报错，请重启电脑让环境变量生效（别问，问就是玄学）
 
@@ -104,12 +116,17 @@ Windows命令▲
 
 你可以选择自己喜欢的安装方式，本次实战使用的是「winget」的安装方式。
 
-1. 开始 → 命令提示符 → 输入 `winget install Hugo.Hugo.Extended`，等待程序自动下载自动安装。
-2. 安装结束后，命令提示符输入`hugo version`，看到版本号，你的博客生成器安装完成啦。
+1. ### 安装Hugo
+
+   开始 → 命令提示符 → 输入 `winget install Hugo.Hugo.Extended`，等待程序自动下载自动安装。
+
+2. ### 验证安装
+
+   安装结束后，命令提示符输入`hugo version`，看到版本号，你的博客生成器安装完成啦。
 
 **小贴士：** **为什么选Extended版？** 就像奶茶要加奶盖，有些主题需要额外功能支持
 
-相关截图：
+**相关截图：**
 
 ![Windows命令](image-20250319100717445.png)
 
@@ -123,19 +140,27 @@ Windows命令▲
 
 参考文档：https://gohugo.io/getting-started/quick-start/
 
-1. 任意位置新建文件夹 `wwwroot`，右键选择「在终端打开」。
+1. ### 规划博客站点本地路径
+
+   任意位置新建文件夹 `wwwroot`，右键选择「在终端打开」。
 
    `wwwroot`文件夹是为了方便站点管理，也许你会创还能很多个网站用来试手。
 
-2. 创建本地站点，输入命令：`hugo new site bokeyanjiushe`，执行魔法咒语
+2. ### 创建本地站点
 
-3. 进入博客根目录，输入命令：`cd bokeyanjiushe`，执行魔法咒语
+   创建本地站点，输入命令：`hugo new site bokeyanjiushe`，执行魔法咒语
 
-4. 初始化Git仓库，输入命令：`git init`，执行魔法咒语
+3. ### 进入站点根目录
 
-5. 启动Hugo服务，输入命令：`hugo server`，执行魔法咒语。
+   进入博客站点根目录，输入命令：`cd bokeyanjiushe`，执行魔法咒语
 
-6. 打开站点：使用浏览器打开：「http://localhost:1313/」页面显示“Page Not Found”，无需担心，因为还没有添加内容。
+4. ### 启动Hugo
+
+   启动Hugo服务，输入命令：`hugo server`，执行魔法咒语。
+
+5. ### 查看效果
+
+   打开站点：使用浏览器打开：「http://localhost:1313/」页面显示“Page Not Found”，无需担心，因为还没有添加内容。
 
 **至此你已经成功完成了本地站点的创建，你可以看看博客根目录里的文件，熟悉一下目录结构。**
 
@@ -176,11 +201,17 @@ Windows命令▲
 
 主题Demo：https://demo.stack.jimmycai.com/
 
-1. 进入主题目录：Windows资源管理器找到博客根目录，右键选择「在终端打开」。
+1. ### 进入站点根目录
 
-2. 初始化Git仓库，输入命令：`git init`，执行魔法咒语。
+   进入站点根目录：Windows资源管理器找到博客根目录，右键选择「在终端打开」。
 
-3. 安装hugo主题「stack」，输入命令：
+2. ### 初始化Git仓库
+
+   初始化本地站点Git仓库，在打开的终端输入命令：`git init`，执行魔法咒语。
+
+3. ### 安装Hugo主题
+
+   安装Hugo主题「stack」，输入命令：
 
    ```
    git submodule add https://github.com/CaiJimmy/hugo-theme-stack.git themes/hugo-theme-stack
@@ -188,11 +219,15 @@ Windows命令▲
 
    ***注：**如果打不开GitHub，需要先启动海外VPN服务。*
 
-4. 复制主题用例的`hugo.yaml`文件到博客根目录，删除原有hugo配置文件`bokeyanjiushe/hugo.taml`。
+4. ### 复制Hugo配置文件
+
+   复制主题用例的`hugo.yaml`文件到博客根目录，需删除原有hugo配置文件`bokeyanjiushe/hugo.taml`。
 
    将`bokeyanjiushe/themes/hugo-theme-stack/exampleSite/hugo.yaml`复制到博客根目录`bokeyanjiushe/hugo.yaml`
 
-5. 修改Hugo配置文件：`bokeyanjiushe/hugo.yaml`，使用记事本打开该文件，采用 `Ctrl` + `F` 的方式快速找到修改位置。
+5. ### 修改Hugo配置文件
+
+   修改Hugo配置文件：`bokeyanjiushe/hugo.yaml`，使用记事本打开该文件，采用 `Ctrl` + `F` 的方式快速找到修改位置。
 
    修改语言：`languageCode: zh-cn`
 
@@ -232,7 +267,7 @@ Windows命令▲
 
    
 
-6. 启动预览：
+6. ### 启动预览
 
    Windows资源管理器找到博客根目录，右键选择「在终端打开」。
 
@@ -278,33 +313,41 @@ Windows命令▲
 
 文章前置信息参考主题文档：https://stack.jimmycai.com/writing/frontmatter
 
-1. **打开内容目录：**
+1. ### 打开内容目录
 
    ```
    bokeyanjiushe\content\
    ```
 
-2. **新建文章存储文件夹「`post`」：**
+2. ### 新建文章存储文件夹「`post`」
 
    ```
    bokeyanjiushe\content\post\
    ```
 
-3. **新建文章内容文件夹`1_hello-bloger`，方便区分文章：** 
+3. ### 新建文章内容文件夹
+
+   新建文章内容文件夹：`1_hello-bloger`，方便区分文章：
 
    ```
    bokeyanjiushe\content\post\1_hello-bloger\
    ```
 
-4. **在文章文件夹内新建`index.md`文件**
+4. ### 新建文章index.md
+
+   在文章文件夹内新建`index.md`文件：
 
    ```
    bokeyanjiushe\content\post\1_hello-bloger\index.md
    ```
 
-5. **用记事本或Markdown编辑器打开新建的`index.md`，开始编写第一篇文章吧。**
+5. ### 编辑文章index.md
 
-6. **文章前置信息：可参考hugo文档或主题文档。**
+   用记事本或Markdown编辑器打开新建的`index.md`，开始编写第一篇文章吧。
+
+6. ### 文章前置信息
+
+   前置信息，可参考hugo文档或主题文档。下面是一个例子，仅供参考。
 
    ```
    ---
@@ -318,7 +361,9 @@ Windows命令▲
    ---
    ```
 
-7. **文章正文内容：前置信息后面是正文内容，使用Markdown编写，可以借助Markdown应用编辑。**
+7. ### 文章正文内容
+
+   前置信息后面是正文内容，使用Markdown编写，可以借助Markdown应用编辑。
 
    index.md
 
@@ -350,7 +395,7 @@ Windows命令▲
    *以上内容由AI生成*
    ```
 
-8. **本地构建静态文件，启动hugo服务。**
+8. ### 构建静态文件启动Hugo服务
 
    博客根目录，右键点击「在终端打开」，执行命令`hugo server -D`，浏览器访问`http://localhost:1313`就能看到刚才发布的文章了。
 
@@ -378,11 +423,13 @@ Markdown编辑器▲
 
 参考文档：https://gohugo.io/host-and-deploy/host-on-github-pages/
 
-1. **在GitHub新建仓库。**［Create a GitHub repository.］
+1. ### GitHub新建仓库
 
-   注意，仓库名与用户名保持一致。这样可以获得一个不带目录的二级域名方便绑定自己的域名。
+   仓库名与用户名保持一致，当然也可以不保持一致，之后可以自定义域名来绑定自己的域名。
 
    `用户名.github.io`（例如 `we-x.github.io`）
+
+   `用户名.github.io/仓库名`（例如 `we-x.github.io/we-x`）
 
    **相关截图：**
 
@@ -390,11 +437,11 @@ Markdown编辑器▲
 
    在GitHub新建仓库▲
 
-2. **［Push your local repository to GitHub.］使用Git推送本地文件到GitHub**
+2. ### 使用Git推送本地文件到GitHub
 
    使用执行**Git命令**的方式 **或** **GitHub Desktop 可视化操作**。
 
-   方式一、**Git命令推动本地代码（新手不建议）：**
+   #### 方式一、**Git命令推动本地代码（新手不建议）：**
 
    在博客根目录下右键点击「Open Git Bash here」，依次输入命令：
 
@@ -414,7 +461,7 @@ Markdown编辑器▲
    git push -u origin main
    ```
 
-   方式二、**GitHub Desktop推送本地代码：**
+   #### 方式二、**GitHub Desktop推送本地代码：**
 
    下载并安装：GitHub Desktop
 
@@ -434,15 +481,15 @@ Markdown编辑器▲
 
    GitHub Desktop界面▲
 
-3. **修改GitHub Pages构建部署方式**
+3. ### 修改GitHub Pages构建部署方式
 
    使用浏览器访问你的GitHub仓库：仓库菜单`Settings` > `Pages`，`Build and deployment` > `Source` 修改为`GitHub Actions`
 
-   相关截图：
+   **相关截图：**
 
    ![修改GitHub Pages构建部署方式](image-20250319164801517.png)
 
-4. **更改本地图片缓存路径**
+4. ### 更改本地图片缓存路径
 
    编辑本地博客站点根目录的配置文件：`bokeyanjiushe\hugo.yaml`，在配置文件末尾添加以下代码。
 
@@ -452,11 +499,17 @@ Markdown编辑器▲
        dir: :cacheDir/images
    ```
 
-5. **创建workflows目录及文件**：`.github` \ `workflows` \ `hugo.yaml`
+5. ### 创建workflows
+
+   执行配置文件的路径：`.github` \ `workflows` \ `hugo.yaml`
+
+   **创建详情：**
 
    本地博客站点根目录下新建文件夹及配置文件：`bokeyanjiushe\.github\workflows\hugo.yaml`
 
-6. **修改刚新建的hogo.yaml：**`.github\workflows\hugo.yaml`
+6. ### 修改刚新建的hogo.yaml
+
+   本地文件路径：`bokeyanjiushe\.github\workflows\hugo.yaml`
 
    将以下代码复制到该文件，按需修改仓库分支名称：`branches`及Hugo版本：`HUGO_VERSION`配置。
 
@@ -564,13 +617,13 @@ Markdown编辑器▲
 
    
 
-7. **推送更改信息到GitHub仓库**
+7. ### 推送更改信息到GitHub仓库
 
-   方式一、**GitHub Desktop**
+   #### 方式一、GitHub Desktop
 
    ![GitHub Desktop截图](image-20250319170943047.png)
 
-   方式二、**Git命令**
+   #### 方式二、Git命令
 
    ```
    git add -A
@@ -578,9 +631,11 @@ Markdown编辑器▲
    git push
    ```
 
-8. **推送后查看workflows的工作状态**
+8. ### 查看workflows的工作状态
 
-   当GitHub完成构建和部署您的网站后，状态指示器的颜色会变为绿色。
+   本地更改文件Git推送后，查看GitHub Actions状态：`GitHub仓库` > `Actions` 。
+
+   完成构建和部署您的网站后，状态指示器的颜色会变为绿色。
 
    **相关截图：**
 
@@ -594,7 +649,9 @@ Markdown编辑器▲
 
    构建详情▲
 
-9. **访问 `https://用户名.github.io/仓库名`，你的博客已上线！**
+9. 查看效果
+
+   访问 `https://用户名.github.io/仓库名`，你的独立博客已上线！
 
    `https://we-x.github.io/we-x/`，下一步绑定自己的域名，绑定后GitHub提供的域名将失效。
 
@@ -608,13 +665,13 @@ Markdown编辑器▲
 
 👉 **薅羊毛指南**
 
-1. 购买域名：
+1. ### 购买域名
 
    **［彩蛋］**阿里云新用户注册购买`.cn` \ `.com` 首年免费，`.xin` \ `.top` 首年只要1元。
 
    **［彩蛋］**免费域名：Freenom（https://www.freenom.com/）提供免费域名服务，后缀有：`.TK` / `.ML` / `.GA` / `.CF` / `.GQ`。
 
-2. GitHub设置自定义域名
+2. ### GitHub设置自定义域名
 
    GitHub仓库`Settings` > `Pages` 找到自定义域名`Custom domain`，填入自己的域名并保存`Save`。
 
@@ -624,11 +681,11 @@ Markdown编辑器▲
 
    自定义域名▲
 
-3. **配置DNS解析：**
+3. ### 配置DNS解析
 
    有两种方式，第一种添加A记录，第二种添加AAAA记录。
 
-   **方式一、添加A记录，记录值如下：**
+   #### 方式一、添加A记录，记录值如下
 
    ```
    185.199.108.153
@@ -639,7 +696,7 @@ Markdown编辑器▲
 
    添加A记录：`www → 185.199.108.153`（GitHub Pages的IP）
 
-   **方式二、添加AAAA记录，记录值如下：**
+   #### 方式二、添加AAAA记录，记录值如下
 
    ```
    2606:50c0:8000::153
@@ -650,9 +707,9 @@ Markdown编辑器▲
 
    添加AAAA记录：`www → 2606:50c0:8000::153`
 
-4. 等待DNS解析生效，就能访问你的专属域名了！
+   等待域名DNS解析生效，就能使用专属域名访问你的独立博客了。
 
-5. 更改hugo配置信息
+5. ### 更改hugo配置信息
 
    记事本打开博客根目录下的配置文件：`bokeyanjiushe\hugo.yaml`
 
@@ -660,7 +717,7 @@ Markdown编辑器▲
 
    修改后使用GitHub Desktop提交并推送更改的文件。
 
-6. 访问自定义域名看看效果吧。
+6. ### 访问自定义域名看看效果吧
 
    Tips：DNS生效后仍打不开，请重启浏览器后再试。
 
