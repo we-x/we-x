@@ -1,8 +1,8 @@
-baseurl: https://example.com/
+baseurl: http://www.boke360.cn/
 languageCode: zh-cn
 theme: hugo-theme-stack
 title: 博客研究社
-copyright: Example Person
+copyright: 博客研究社
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
