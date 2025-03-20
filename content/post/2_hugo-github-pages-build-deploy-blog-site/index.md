@@ -1,11 +1,15 @@
 ---
 title: 实战：从0部署Hugo + GitHub Pages独立博客，自定义域名9.9元瑞幸咖啡都花不了
 description: 免费创建独立博客实战教程：Hugo+GitHub Pages自动部署，文内有彩蛋 。
-date: 2024-03-18 23:09:16
+date: 2025-03-18 23:09:16
 slug: hugo-github-pages-build-deploy-blog-site
 image: cover.jpg
 categories:
-    - 博客指南
+    - guide
+tags:
+    - 创建博客
+    - Hugo
+    - GitHub Pages
 ---
 
 **（文内有彩蛋）**
@@ -18,9 +22,9 @@ categories:
 
 为什么选Hugo？
 
-- **闪电速度：**生成上千篇文章只需1秒，比外卖小哥送咖啡还快
-- **零成本**：所有工具免费，连域名都有薅羊毛技巧（见第08步，自定义域名）
-- **高颜值：**用上`hugo-theme-stack`主题，秒变极简风博主
+- **闪电速度：** 生成上千篇文章只需1秒，比外卖小哥送咖啡还快
+- **零成本：** 所有工具免费，连域名都有薅羊毛技巧（见第08步，自定义域名）
+- **高颜值：** 用上`hugo-theme-stack`主题，秒变极简风博主
 
 ---
 

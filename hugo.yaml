@@ -1,4 +1,4 @@
-baseurl: http://www.boke360.cn/
+baseurl: https://www.boke360.cn/
 languageCode: zh-cn
 theme: hugo-theme-stack
 title: 博客研究社
@@ -55,11 +55,11 @@ params:
     mainSections:
         - post
     featuredImageField: image
-    rssFullContent: true
+    rssFullContent: false
     favicon: # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
-        since: 2020
+        since: 2025
         customText:
 
     dateFormat:
@@ -68,7 +68,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: 致力博客发展，共探博客未来。
         avatar:
             enabled: true
             local: true
@@ -79,12 +79,12 @@ params:
         toc: true
         readingTime: true
         license:
-            enabled: true
+            enabled: false
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
         enabled: true
-        provider: disqus
+        provider: twikoo
 
         disqusjs:
             shortname:
@@ -192,7 +192,7 @@ params:
     defaultImage:
         opengraph:
             enabled: false
-            local: false
+            local: true
             src:
 
     colorScheme:
@@ -212,20 +212,33 @@ params:
 ### See https://stack.jimmycai.com/config/menu
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
-    main: []
+    main:
+    - name: 首页
+      pageRef: /
+      weight: 10
+      params:
+        icon: home
+
+    - name: 分类
+      pageRef: /categories
+      weight: 20
+      params:
+          icon: categories
+    
+        
 
     social:
-        - identifier: github
-          name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+        - identifier: RSS
+          name: RSS
+          url: https://www.boke360.cn/index.xml
           params:
-              icon: brand-github
+              icon: rss
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
+        - identifier: search
+          name: Search
+          url: https://www.boke360.cn/search
           params:
-              icon: brand-twitter
+              icon: search
 
 related:
     includeNewer: true
