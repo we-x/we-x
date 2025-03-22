@@ -63,7 +63,7 @@ params:
         customText:
 
     dateFormat:
-        published: 2006-02-02 15:04
+        published: 2006-01-02 15:04
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
@@ -284,3 +284,5 @@ markup:
 caches:
   images:
     dir: :cacheDir/images
+
+timezone: Asia/Shanghai

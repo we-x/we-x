@@ -1,8 +1,10 @@
 ---
 title: "归档"
-date: 2025-03-19
-layout: "archives"
 slug: "archives"
+layout: "archives"
+outputs:
+    - html
+    - json
 menu:
     main:
         weight: 30
