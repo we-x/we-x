@@ -133,7 +133,7 @@ params:
                 placeholder:
 
         twikoo:
-            envId:
+            envId: https://twikoo.boke360.cn/.netlify/functions/twikoo
             region:
             path:
             lang:
