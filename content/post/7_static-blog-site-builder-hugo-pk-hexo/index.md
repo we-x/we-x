@@ -1,6 +1,6 @@
 ---
 title: Hugo 与 Hexo：一场静态博客生成器的 "巅峰对决"
-description: 
+description: 在静态博客生成器的江湖里，Hugo 和 Hexo 就像是两座巍峨的高山，各自散发着独特的魅力，引得无数开发者和博主竞折腰。
 date: 2025-03-17 16:30:12
 slug: static-blog-site-builder-hugo-pk-hexo
 image: cover.jpg

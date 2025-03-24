@@ -1,5 +1,5 @@
 ---
-title: 你好博主，你好博客研究社——花30元开通了独立博客站点
+title: 你好博主，你好博客研究社——花了30元块钱
 description: 博主你好，欢迎来到博客研究社。助力博客发展，为思考点赞。
 date: 2025-03-18 13:12:11
 slug: hello-bloger-hello-bokeyanjiushe
