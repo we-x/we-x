@@ -136,7 +136,7 @@ https://app.netlify.com/
 
 https://twikoo.js.org/frontend.html
 
-#### 方式一、主题配置
+### 方式一、主题配置
 
 如果你的主题支持Twikoo，在配置文件中设置即可。
 
@@ -156,7 +156,7 @@ Hugo Stack主题，可在配置文件中找到以下配置代码，修改即可�
             lang:
 ```
 
-#### 方式二、前端部署
+### 方式二、前端部署
 
 参考文档：
 
