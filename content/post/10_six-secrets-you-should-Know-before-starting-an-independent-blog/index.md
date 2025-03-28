@@ -1,7 +1,7 @@
 ---
 title: 宝子们，做独立博客前必知的6件“小秘密”
 description: 需要注意的是此操作流程使用的是Twikoo Netlify部署，其他部署方式略有差异。我们将使用MongoDB提供的免费数据库以及Netlify提供的WEB服务，全程无需支付。
-date: 2025-03-26 20:56:12
+date: 2025-03-28 18:15:12
 slug: six-secrets-you-should-Know-before-starting-an-independent-blog
 image: cover.jpg
 categories:
