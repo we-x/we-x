@@ -2,7 +2,7 @@
 title: 宝子们，做独立博客前必知的6件“小秘密”
 description: 你为啥要做博客？是想靠着博客赚点小钱，还是想当“知识博主”分享自己的独门秘籍，还是想把博客当成自己的“情绪树洞”，还是想把博客当做记录生活的日记本，还是说想把博客打造成自己的第二分身？
 date: 2025-03-28 18:15:12
-slug: six-secrets-you-should-Know-before-starting-an-independent-blog
+slug: six-secrets-you-should-know-before-starting-an-independent-blog
 image: cover.jpg
 categories:
     - guide
