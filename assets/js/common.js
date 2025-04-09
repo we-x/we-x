@@ -1,18 +1,15 @@
 (() => {
-    const backToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" })
-    }
-
     const mainArea = document.querySelector(".main")
     if (!mainArea) {
         return
     }
 
-    // 添加返回顶部按钮到右侧边栏
-    const btn = document.createElement("div")
+    const backToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
 
-    btn.classList.add("back-top-btn")
-    mainArea.appendChild(btn)
+    // 添加返回顶部按钮到右侧边栏
+    const btn = document.querySelector(".back-top-btn")
 
     let 
         containerArea = 0
